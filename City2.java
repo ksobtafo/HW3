@@ -39,7 +39,7 @@ public class City2 extends JFrame {
 	 */
 	public City2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 450, 212);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -47,7 +47,7 @@ public class City2 extends JFrame {
 		
 		JButton btnNewButton = new JButton("City Hall ");
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnNewButton.setBounds(41, 123, 145, 37);
+		btnNewButton.setBounds(37, 98, 145, 37);
 		contentPane.add(btnNewButton);
 		
 		btnNewButton.setIcon(new ImageIcon("town_hall.png"));
@@ -61,7 +61,7 @@ public class City2 extends JFrame {
 		
 		JButton btnSchool = new JButton("School ");
 		btnSchool.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnSchool.setBounds(277, 123, 147, 37);
+		btnSchool.setBounds(277, 98, 147, 37);
 		contentPane.add(btnSchool);
 		
 		btnSchool.setIcon(new ImageIcon("school.png"));
@@ -78,11 +78,8 @@ public class City2 extends JFrame {
 		
 		JLabel lblWhereDoYou = new JLabel("Where do you want to go ?");
 		lblWhereDoYou.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblWhereDoYou.setBounds(111, 11, 247, 23);
+		lblWhereDoYou.setBounds(111, 25, 247, 23);
 		contentPane.add(lblWhereDoYou);
-		
-		JButton btnShowMytown = new JButton("Show MyTown");
-		btnShowMytown.setBounds(172, 201, 129, 23);
-		contentPane.add(btnShowMytown);
 	}
 }
+
