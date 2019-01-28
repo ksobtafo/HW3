@@ -52,16 +52,29 @@ public class city4 extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("Add people to your CityHall");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
-		lblNewLabel.setBounds(119, 22, 206, 14);
+		lblNewLabel.setBounds(54, 11, 206, 14);
 		contentPane.add(lblNewLabel);
 		
 		JButton btnAdd = new JButton("Add");
-		btnAdd.setBounds(57, 77, 89, 23);
+		btnAdd.setBounds(68, 53, 89, 23);
 		contentPane.add(btnAdd);
 		
-		JButton btnNext = new JButton("next");
-		btnNext.setBounds(188, 77, 89, 23);
+		JButton btnNext = new JButton("Go to School");
+		btnNext.setBounds(180, 53, 104, 23);
 		contentPane.add(btnNext);
+		
+		JButton btnNewButton = new JButton(" Show CityHall details ");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//stuff here 
+				for ( int i =0; i<CityHallArray.size();i++)
+				{
+					JOptionPane.showMessageDialog(null, "Name: "+ CityHallArray.get(i).getPoliceName());
+				}
+			}
+		});
+		btnNewButton.setBounds(99, 87, 166, 23);
+		contentPane.add(btnNewButton);
 		
 
 		btnNext.addActionListener(new ActionListener() {
