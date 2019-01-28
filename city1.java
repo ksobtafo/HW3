@@ -48,7 +48,7 @@ public class city1 {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 450, 158);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JLabel lblNewLabel = new JLabel("Welcome to MyCity");
@@ -81,3 +81,4 @@ public class city1 {
 	}
 
 }
+
