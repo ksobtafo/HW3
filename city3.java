@@ -59,7 +59,7 @@ public class city3 extends JFrame {
 		contentPane.add(lblAddPeopleTo);
 		
 		JButton btnAdd = new JButton("Add");
-		btnAdd.setBounds(31, 97, 89, 23);
+		btnAdd.setBounds(33, 97, 89, 23);
 		contentPane.add(btnAdd);
 		
 		btnAdd.addActionListener(new ActionListener() { 
@@ -79,9 +79,30 @@ public class city3 extends JFrame {
 			}
 			});	
 		
-		JButton btnNext = new JButton("Next");
-		btnNext.setBounds(162, 97, 89, 23);
+		JButton btnNext = new JButton("Go to CityHall");
+		btnNext.setBounds(162, 97, 110, 23);
 		contentPane.add(btnNext);
+		
+		JButton btnShowMyschoolDetails = new JButton("Show mySchool details ");
+		btnShowMyschoolDetails.setBounds(73, 132, 149, 23);
+		contentPane.add(btnShowMyschoolDetails);
+		
+		btnShowMyschoolDetails.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				//stuff here 
+				for ( int i =0; i<SchoolArray.size();i++)
+				{
+					if (SchoolArray.get(i).GetAge()>19)
+					{
+						
+						JOptionPane.showMessageDialog(null, "Name: "+ SchoolArray.get(i).GetName()+" is a teacher, and is "+ SchoolArray.get(i).GetAge());
+					}
+					else 
+					JOptionPane.showMessageDialog(null, "Name: "+ SchoolArray.get(i).GetName()+" is a student, and is "+ SchoolArray.get(i).GetAge()) ;
+				}
+			}
+		});
+		
 		
 		
 		btnNext.addActionListener(new ActionListener() {
